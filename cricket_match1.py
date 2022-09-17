@@ -3,7 +3,7 @@ import requests, time
 
 
 def AvailableMsg():
-	url1 = 'https://api.telegram.org/bot5659173779:AAF97iKhqw4MwiLt8M9y-gUxk-9oAlJvO0I/sendMessage?chat_id=5174886440&text=Tickets Available Now!\nClick here to buy - https://insider.in/mastercard-series-3rd-t20i-india-v-australia-hyderabad-sep25/buy'
+	url1 = 'https://api.telegram.org/bot5659173779:AAF97iKhqw4MwiLt8M9y-gUxk-9oAlJvO0I/sendMessage?chat_id=-1001759600352&text=Tickets Available Now!\nClick here to buy - https://insider.in/mastercard-series-3rd-t20i-india-v-australia-hyderabad-sep25/buy'
 
 	for i in range(15):
 		requests.get(url1)
@@ -33,6 +33,7 @@ while x:
 	if response == '<Response [404]>':
 		print('Not Available')
 		time.sleep(5)
+		AvailableMsg()
 		
 	else:
 		AvailableMsg()
