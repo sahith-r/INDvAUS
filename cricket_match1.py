@@ -6,7 +6,7 @@ def AvailableMsg():
 	url1 = 'https://api.telegram.org/bot5659173779:AAF97iKhqw4MwiLt8M9y-gUxk-9oAlJvO0I/sendMessage?chat_id=5174886440&text=Tickets Available Now!\nClick here to buy - https://insider.in/mastercard-series-3rd-t20i-india-v-australia-hyderabad-sep25/buy'
 
 	for i in range(15):
-		requests.get(url)
+		requests.get(url1)
 		
 
 # schedule.every().day.at(":00:00").do(AvailableMsg)
