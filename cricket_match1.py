@@ -33,6 +33,7 @@ while x:
 	if response == '<Response [404]>':
 		print('Not Available')
 		time.sleep(5)
+		AvailableMsg()
 	else:
 		AvailableMsg()
 		x=0
