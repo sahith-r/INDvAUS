@@ -1,1 +1,1 @@
-worker: python==3.10.7
+worker: python cricket_match1.py
