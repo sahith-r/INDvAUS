@@ -29,9 +29,11 @@ while stop:
 	if response == '<Response [404]>':
 		print('Not Available')
 		time.sleep(10)
-        elif response == '<Response [200]>':
-                AvailableMsg()
-                stop = 0
+		
+	elif response == '<Response [200]>':
+	    AvailableMsg()
+	    stop = 0
+                
 	else:
 		ErrorMsg()
 		stop=0
