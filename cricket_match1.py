@@ -12,7 +12,7 @@ def AvailableMsg():
 		
 
 def ErrorMsg():
-	url2 = f'https://api.telegram.org/bot5659173779:AAF97iKhqw4MwiLt8M9y-gUxk-9oAlJvO0I/sendMessage?chat_id=5174886440&text=Error {response}'
+	url2 = f'https://api.telegram.org/bot5659173779:AAF97iKhqw4MwiLt8M9y-gUxk-9oAlJvO0I/sendMessage?chat_id=5174886440&text={i} Error {response}'
 	for i in range(20):
 		requests.get(url2)
 		
