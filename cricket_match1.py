@@ -27,7 +27,7 @@ stop_available = 1
 
 while stop:
 
-	html = requests.get(match_page)
+	html = requests.get(match_page, allow_redirects=True)
 	response = str(html)
 
 	if response == '<Response [404]>':
