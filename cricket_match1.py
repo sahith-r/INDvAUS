@@ -30,7 +30,7 @@ while stop:
 	html = requests.get(match_page, allow_redirects=True)
 	response = str(html)
 
-	if response == '<Response [404]>':
+	if response == '<Response [200]>':
 		print('Tickets not available yet!')
 		time.sleep(10)
 		
